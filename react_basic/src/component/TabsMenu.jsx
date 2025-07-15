@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import TabButton from "./TabButton"; // 🟡 Nhớ import lại
-import "./TabsMenu.css";
+// import "./TabsMenu.css";
 
 function TabsMenu({ tabs, autoInterval = 3000 }) {
   const [selectedTab, setSelectedTab] = useState(tabs[0].id);
