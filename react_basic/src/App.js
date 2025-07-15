@@ -9,6 +9,9 @@ import { myData, EXAMPLES } from './data.js';
 import ActiveButton from './component/ActiveButton.jsx';
 import Greeting from './component/Greeting.jsx';
 import AddClassName from './component/AddClassName.jsx';
+import BookList from './component/BookList.jsx';
+import Section from './component/Section.jsx';
+
 function App() {
     const [selectTopic, setSelectTopic] = useState();
 
@@ -66,11 +69,10 @@ function App() {
 
     return (
         <>
-            <Header />
+            <Header />            
             <main>
                 {/* <Greeting/> */}
-                <section id="core-concepts">
-                    <h2>Khai niem</h2>
+                <Section title = "Definition" id="core-concepts">                    
                     <ul>
                         {/* <MainContent {...myData[0]} />
                         <MainContent {...myData[1]} />
@@ -81,21 +83,21 @@ function App() {
                         )}
 
                     </ul>
-                </section>
-                <section id="examples">
-                    <h2>Examples</h2>
+                </Section> 
+                               
+                <Section title="Examples" id="examples">
                     <menu>
-                        <TabButton isSelected={selectTopic === "components"} onSelect={() => { handleSelect('components') }}>1</TabButton>
-                        <TabButton isSelected={selectTopic === "jsx"} onSelect={() => { handleSelect('jsx') }}>2</TabButton>
-                        <TabButton isSelected={selectTopic === "props"} onSelect={() => { handleSelect('props') }}>3</TabButton>
-                        <TabButton isSelected={selectTopic === "state"} onSelect={() => { handleSelect('state') }}>4</TabButton>
+                        <TabButton isSelected={selectTopic === "components"} onClick={() => { handleSelect('components') }}>1</TabButton>
+                        <TabButton isSelected={selectTopic === "jsx"} onClick={() => { handleSelect('jsx') }}>2</TabButton>
+                        <TabButton isSelected={selectTopic === "props"} onClick={() => { handleSelect('props') }}>3</TabButton>
+                        <TabButton isSelected={selectTopic === "state"} onClick={() => { handleSelect('state') }}>4</TabButton>
                     </menu>
                     {tabContent}
-                </section>
+                </Section>
                 {/* <ActiveButton/> */}
-                {/* <AddClassName/> */}
-
+                {/* <AddClassName/> */}               
             </main >
+            {/* <BookList/> */}
         </>
     );
 }

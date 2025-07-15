@@ -216,3 +216,85 @@ header p {
   text-shadow: 0 4px 8px #5b16c39a;
   transform: scale(1.2);
 }
+
+.book-container {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f9;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.book-search {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.book-toggle-btn {
+  padding: 0.5rem 1rem;
+  background-color: #9370db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.book-toggle-btn:hover {
+  background-color: #7a5dc7;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.book-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.book-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.book-add-btn {
+  padding: 0.6rem 1rem;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.book-add-btn:hover {
+  background-color: #218838;
+}
+
+.book-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 1rem;
+}

@@ -90,3 +90,10 @@ export const EXAMPLES = {
     `,
   },
 };
+
+export const books = [
+  { title: "Clean Code", author: "Robert C. Martin", year: 2008 },
+  { title: "The Pragmatic Programmer", author: "Andrew Hunt", year: 1999 },
+  { title: "You Don’t Know JS", author: "Kyle Simpson", year: 2014 }
+];
+
