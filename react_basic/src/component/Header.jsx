@@ -1,6 +1,4 @@
-import pic1 from "../../assets/pic1.jpg";
-
-import "./Header.css";
+import pic1 from "../assets/pic1.jpg";
 
 function Header() {
   return (
